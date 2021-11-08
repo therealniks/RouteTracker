@@ -32,14 +32,33 @@
                     </view>
                     <navigationItem key="navigationItem" id="u0i-I5-MSX">
                         <leftBarButtonItems>
-                            <barButtonItem title="Center" id="p9E-w2-sex"/>
-                            <barButtonItem title="Current" id="V9W-mg-Yd2"/>
+                            <barButtonItem title="Center" id="p9E-w2-sex">
+                                <connections>
+                                    <action selector="goToCenter:" destination="BYZ-38-t0r" id="sjR-Bw-Q78"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Current" id="V9W-mg-Yd2">
+                                <connections>
+                                    <action selector="currentLocation:" destination="BYZ-38-t0r" id="56U-2G-lak"/>
+                                </connections>
+                            </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Mark" id="zFX-jF-trw"/>
-                            <barButtonItem title="Update" id="PhL-ob-3gA"/>
+                            <barButtonItem title="Mark" id="zFX-jF-trw">
+                                <connections>
+                                    <action selector="putMark:" destination="BYZ-38-t0r" id="ilY-kt-DCk"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Update" id="PhL-ob-3gA">
+                                <connections>
+                                    <action selector="updateLocation:" destination="BYZ-38-t0r" id="hJx-ue-nwy"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="7YX-h7-4zz" id="hDA-6Z-lUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="ZYg-ki-YwU">
