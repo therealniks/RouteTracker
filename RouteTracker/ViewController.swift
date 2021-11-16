@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     
     private func configureCL() {
         locationManager = CLLocationManager()
-        locationManager?.requestWhenInUseAuthorization()
+        locationManager?.allowsBackgroundLocationUpdates = true
+        locationManager?.pausesLocationUpdatesAutomatically = false
+        locationManager?.startMonitoringSignificantLocationChanges()
+        locationManager?.requestAlwaysAuthorization()
         locationManager?.delegate = self
     }
     

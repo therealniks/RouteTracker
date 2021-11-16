@@ -13,6 +13,7 @@
 		8000EC9C27395D6200B13BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9A27395D6200B13BE9 /* Main.storyboard */; };
 		8000EC9E27395D6300B13BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9D27395D6300B13BE9 /* Assets.xcassets */; };
 		8000ECA127395D6300B13BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */; };
+		8037FE172743F79C00F2C583 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037FE162743F79C00F2C583 /* Point.swift */; };
 		B1A6F43B205C500877AAAFEE /* Pods_RouteTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C976D45A8C1CF26F5D732E3 /* Pods_RouteTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		8000EC9D27395D6300B13BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8000ECA027395D6300B13BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8000ECA227395D6300B13BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8037FE162743F79C00F2C583 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				20CFEA3354984BC66B454F65 /* Pods-RouteTracker.debug.xcconfig */,
 				116568855D77D331AEE33D18 /* Pods-RouteTracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 		8000EC9327395D6200B13BE9 /* RouteTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8037FE152743F77F00F2C583 /* Models */,
 				8000EC9427395D6200B13BE9 /* AppDelegate.swift */,
 				8000EC9627395D6200B13BE9 /* SceneDelegate.swift */,
 				8000EC9827395D6200B13BE9 /* ViewController.swift */,
@@ -82,6 +84,14 @@
 				8000ECA227395D6300B13BE9 /* Info.plist */,
 			);
 			path = RouteTracker;
+			sourceTree = "<group>";
+		};
+		8037FE152743F77F00F2C583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8037FE162743F79C00F2C583 /* Point.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		94C95A96F921118315942ED4 /* Frameworks */ = {
@@ -104,6 +114,7 @@
 				8000EC8E27395D6200B13BE9 /* Frameworks */,
 				8000EC8F27395D6200B13BE9 /* Resources */,
 				466DFE36D9D3013932330658 /* [CP] Copy Pods Resources */,
+				5A0F11E43B7EC132E93E54B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +189,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RouteTracker/Pods-RouteTracker-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5A0F11E43B7EC132E93E54B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RouteTracker/Pods-RouteTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RouteTracker/Pods-RouteTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RouteTracker/Pods-RouteTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5EF1685D0D32393F06C29E09 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8037FE172743F79C00F2C583 /* Point.swift in Sources */,
 				8000EC9927395D6200B13BE9 /* ViewController.swift in Sources */,
 				8000EC9527395D6200B13BE9 /* AppDelegate.swift in Sources */,
 				8000EC9727395D6200B13BE9 /* SceneDelegate.swift in Sources */,
@@ -362,6 +391,7 @@
 				DEVELOPMENT_TEAM = 8SFYUBPZ6J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RouteTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "to show maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -391,6 +421,7 @@
 				DEVELOPMENT_TEAM = 8SFYUBPZ6J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RouteTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "to show maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
