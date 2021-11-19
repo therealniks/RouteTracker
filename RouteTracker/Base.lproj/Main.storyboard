@@ -32,32 +32,28 @@
                     </view>
                     <navigationItem key="navigationItem" id="u0i-I5-MSX">
                         <leftBarButtonItems>
-                            <barButtonItem title="Center" id="p9E-w2-sex">
+                            <barButtonItem image="target" catalog="system" id="p9E-w2-sex">
                                 <connections>
-                                    <action selector="goToCenter:" destination="BYZ-38-t0r" id="sjR-Bw-Q78"/>
+                                    <action selector="startTracking:" destination="BYZ-38-t0r" id="ex6-K5-2lK"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Current" id="V9W-mg-Yd2">
+                            <barButtonItem enabled="NO" image="stop.circle.fill" catalog="system" id="V9W-mg-Yd2">
                                 <connections>
-                                    <action selector="currentLocation:" destination="BYZ-38-t0r" id="56U-2G-lak"/>
+                                    <action selector="finishTracking:" destination="BYZ-38-t0r" id="bol-8a-jgX"/>
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Mark" id="zFX-jF-trw">
-                                <connections>
-                                    <action selector="putMark:" destination="BYZ-38-t0r" id="ilY-kt-DCk"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Update" id="PhL-ob-3gA">
-                                <connections>
-                                    <action selector="updateLocation:" destination="BYZ-38-t0r" id="hJx-ue-nwy"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="map.fill" catalog="system" id="zFX-jF-trw">
+                            <connections>
+                                <action selector="showRoute:" destination="BYZ-38-t0r" id="nIp-Oy-6gp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="finishTrackingButton" destination="V9W-mg-Yd2" id="QXk-Nw-Up0"/>
                         <outlet property="mapView" destination="7YX-h7-4zz" id="hDA-6Z-lUd"/>
+                        <outlet property="showRoute" destination="zFX-jF-trw" id="ABa-wh-FJy"/>
+                        <outlet property="startTrackingButton" destination="p9E-w2-sex" id="DyG-Dc-QYv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,6 +108,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="stop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="target" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
