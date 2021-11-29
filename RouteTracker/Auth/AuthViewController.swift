@@ -23,16 +23,19 @@ class AuthViewController: UIViewController {
               login == Constants.login && password == Constants.password else {return}
         
         print("LOGIN")
+        performSegue(withIdentifier: "onLogin", sender: nil)
+        UserDefaults.standard.set(true, forKey: "isLogin")
     }
     
     @IBAction func recovery(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "onReset", sender: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if UserDefaults.standard.bool(forKey: "isLogin") {
+            performSegue(withIdentifier: "onLogin", sender: nil)
+        }
     }
     
 
