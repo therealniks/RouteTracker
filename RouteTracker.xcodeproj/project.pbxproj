@@ -14,6 +14,8 @@
 		8000EC9E27395D6300B13BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9D27395D6300B13BE9 /* Assets.xcassets */; };
 		8000ECA127395D6300B13BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */; };
 		8037FE172743F79C00F2C583 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037FE162743F79C00F2C583 /* Point.swift */; };
+		80EF9AB62755507D00CC58C8 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF9AB52755507D00CC58C8 /* Auth.storyboard */; };
+		80EF9AB82755509B00CC58C8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF9AB72755509B00CC58C8 /* AuthViewController.swift */; };
 		B1A6F43B205C500877AAAFEE /* Pods_RouteTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C976D45A8C1CF26F5D732E3 /* Pods_RouteTracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		8000ECA027395D6300B13BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8000ECA227395D6300B13BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8037FE162743F79C00F2C583 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		80EF9AB52755507D00CC58C8 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		80EF9AB72755509B00CC58C8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +78,10 @@
 		8000EC9327395D6200B13BE9 /* RouteTracker */ = {
 			isa = PBXGroup;
 			children = (
-				8037FE152743F77F00F2C583 /* Models */,
-				8000EC9427395D6200B13BE9 /* AppDelegate.swift */,
-				8000EC9627395D6200B13BE9 /* SceneDelegate.swift */,
-				8000EC9827395D6200B13BE9 /* ViewController.swift */,
-				8000EC9A27395D6200B13BE9 /* Main.storyboard */,
-				8000EC9D27395D6300B13BE9 /* Assets.xcassets */,
-				8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */,
-				8000ECA227395D6300B13BE9 /* Info.plist */,
+				80EF9AB42755506000CC58C8 /* Auth */,
+				80EF9AB32755463400CC58C8 /* Main */,
+				80EF9AB22755462700CC58C8 /* Resources */,
+				8074D815275246C10073B11E /* System */,
 			);
 			path = RouteTracker;
 			sourceTree = "<group>";
@@ -92,6 +92,44 @@
 				8037FE162743F79C00F2C583 /* Point.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8074D815275246C10073B11E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8000EC9427395D6200B13BE9 /* AppDelegate.swift */,
+				8000EC9627395D6200B13BE9 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		80EF9AB22755462700CC58C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8000EC9D27395D6300B13BE9 /* Assets.xcassets */,
+				8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */,
+				8000ECA227395D6300B13BE9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80EF9AB32755463400CC58C8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8037FE152743F77F00F2C583 /* Models */,
+				8000EC9827395D6200B13BE9 /* ViewController.swift */,
+				8000EC9A27395D6200B13BE9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		80EF9AB42755506000CC58C8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80EF9AB52755507D00CC58C8 /* Auth.storyboard */,
+				80EF9AB72755509B00CC58C8 /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		94C95A96F921118315942ED4 /* Frameworks */ = {
@@ -163,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80EF9AB62755507D00CC58C8 /* Auth.storyboard in Resources */,
 				8000ECA127395D6300B13BE9 /* LaunchScreen.storyboard in Resources */,
 				8000EC9E27395D6300B13BE9 /* Assets.xcassets in Resources */,
 				8000EC9C27395D6200B13BE9 /* Main.storyboard in Resources */,
@@ -237,6 +276,7 @@
 			files = (
 				8037FE172743F79C00F2C583 /* Point.swift in Sources */,
 				8000EC9927395D6200B13BE9 /* ViewController.swift in Sources */,
+				80EF9AB82755509B00CC58C8 /* AuthViewController.swift in Sources */,
 				8000EC9527395D6200B13BE9 /* AppDelegate.swift in Sources */,
 				8000EC9727395D6200B13BE9 /* SceneDelegate.swift in Sources */,
 			);
@@ -390,7 +430,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8SFYUBPZ6J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RouteTracker/Info.plist;
+				INFOPLIST_FILE = RouteTracker/Resources/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "to show maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -420,7 +460,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8SFYUBPZ6J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RouteTracker/Info.plist;
+				INFOPLIST_FILE = RouteTracker/Resources/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "to show maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

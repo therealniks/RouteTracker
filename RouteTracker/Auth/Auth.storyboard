@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AuthViewController" customModule="RouteTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oE-s3-A04">
+                                <rect key="frame" x="30" y="244" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I55-Su-7st">
+                                <rect key="frame" x="30" y="378" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF7-gM-Vmu">
+                                <rect key="frame" x="177" y="433" width="60" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Qe-hTc">
+                                <rect key="frame" x="143.5" y="492" width="127" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset password"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MF7-gM-Vmu" firstAttribute="top" secondItem="I55-Su-7st" secondAttribute="bottom" constant="21" id="6Hw-js-CQC"/>
+                            <constraint firstItem="MF7-gM-Vmu" firstAttribute="centerX" secondItem="I55-Su-7st" secondAttribute="centerX" id="87I-Nh-l5q"/>
+                            <constraint firstItem="geA-Qe-hTc" firstAttribute="top" secondItem="MF7-gM-Vmu" secondAttribute="bottom" constant="28" id="8WY-VE-Jtz"/>
+                            <constraint firstItem="I55-Su-7st" firstAttribute="leading" secondItem="8oE-s3-A04" secondAttribute="leading" id="BXp-Gg-SKW"/>
+                            <constraint firstItem="8oE-s3-A04" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="P2y-G5-Ja3"/>
+                            <constraint firstItem="geA-Qe-hTc" firstAttribute="centerX" secondItem="MF7-gM-Vmu" secondAttribute="centerX" id="PFV-9t-BWd"/>
+                            <constraint firstItem="I55-Su-7st" firstAttribute="trailing" secondItem="8oE-s3-A04" secondAttribute="trailing" id="cna-CA-ULa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8oE-s3-A04" secondAttribute="trailing" constant="30" id="emu-Ft-5Nv"/>
+                            <constraint firstItem="8oE-s3-A04" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="lst-Cj-Uan"/>
+                            <constraint firstItem="I55-Su-7st" firstAttribute="top" secondItem="8oE-s3-A04" secondAttribute="bottom" constant="100" id="zhI-70-Af8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0qE-Gr-KDC">
+            <objects>
+                <viewController id="Tcf-5b-LG5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oU6-Tr-rEI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Yc-hW-2b0">
+                                <rect key="frame" x="30" y="244" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvF-2S-VQE">
+                                <rect key="frame" x="176.5" y="316" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NW2-zV-jv7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YvF-2S-VQE" firstAttribute="top" secondItem="1Yc-hW-2b0" secondAttribute="bottom" constant="38" id="Gtf-xP-Z5W"/>
+                            <constraint firstItem="1Yc-hW-2b0" firstAttribute="leading" secondItem="NW2-zV-jv7" secondAttribute="leading" constant="30" id="RVr-7J-yFy"/>
+                            <constraint firstItem="1Yc-hW-2b0" firstAttribute="top" secondItem="NW2-zV-jv7" secondAttribute="top" constant="200" id="mFi-En-vhj"/>
+                            <constraint firstItem="YvF-2S-VQE" firstAttribute="centerX" secondItem="1Yc-hW-2b0" secondAttribute="centerX" id="rYw-zR-NzI"/>
+                            <constraint firstItem="NW2-zV-jv7" firstAttribute="trailing" secondItem="1Yc-hW-2b0" secondAttribute="trailing" constant="30" id="uCn-zJ-X5G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ka-59-d3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
