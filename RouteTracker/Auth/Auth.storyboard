@@ -30,11 +30,17 @@
                                 <rect key="frame" x="177" y="433" width="60" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="Y6W-OH-hqX" eventType="touchDragInside" id="dXn-Jm-twH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geA-Qe-hTc">
                                 <rect key="frame" x="143.5" y="492" width="127" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset password"/>
+                                <connections>
+                                    <action selector="recovery:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mBj-02-SBm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -52,6 +58,10 @@
                             <constraint firstItem="I55-Su-7st" firstAttribute="top" secondItem="8oE-s3-A04" secondAttribute="bottom" constant="100" id="zhI-70-Af8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="8oE-s3-A04" id="kL4-xe-qp3"/>
+                        <outlet property="passwordView" destination="I55-Su-7st" id="4ap-x3-7qZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

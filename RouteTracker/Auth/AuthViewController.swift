@@ -9,6 +9,26 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
+    enum Constants {
+        static let login = "admin"
+        static let password = "root"
+    }
+    
+    @IBOutlet weak var loginView: UITextField!
+    @IBOutlet weak var passwordView: UITextField!
+    
+    @IBAction func login(_ sender: UIButton) {
+        guard let login = loginView.text,
+              let password = passwordView.text,
+              login == Constants.login && password == Constants.password else {return}
+        
+        print("LOGIN")
+    }
+    
+    @IBAction func recovery(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
