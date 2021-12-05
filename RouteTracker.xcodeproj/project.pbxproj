@@ -16,6 +16,7 @@
 		8037FE172743F79C00F2C583 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037FE162743F79C00F2C583 /* Point.swift */; };
 		803D475B275CE02C00B77E19 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D475A275CE02C00B77E19 /* LaunchViewController.swift */; };
 		803D475D275CF21200B77E19 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803D475C275CF21200B77E19 /* Launch.storyboard */; };
+		803D475F275CF6DB00B77E19 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D475E275CF6DB00B77E19 /* BaseRouter.swift */; };
 		80EF9AB62755507D00CC58C8 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF9AB52755507D00CC58C8 /* Auth.storyboard */; };
 		80EF9AB82755509B00CC58C8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF9AB72755509B00CC58C8 /* AuthViewController.swift */; };
 		80EF9ABA27555A3E00CC58C8 /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF9AB927555A3E00CC58C8 /* ResetPassViewController.swift */; };
@@ -38,6 +39,7 @@
 		8037FE162743F79C00F2C583 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		803D475A275CE02C00B77E19 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		803D475C275CF21200B77E19 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		803D475E275CF6DB00B77E19 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		80EF9AB52755507D00CC58C8 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		80EF9AB72755509B00CC58C8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		80EF9AB927555A3E00CC58C8 /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				80EF9AB22755462700CC58C8 /* Resources */,
 				803D4759275CDF1A00B77E19 /* Launch */,
 				8074D815275246C10073B11E /* System */,
+				803D475E275CF6DB00B77E19 /* BaseRouter.swift */,
 			);
 			path = RouteTracker;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EF9ABC2755600C00CC58C8 /* MainViewController.swift in Sources */,
+				803D475F275CF6DB00B77E19 /* BaseRouter.swift in Sources */,
 				8037FE172743F79C00F2C583 /* Point.swift in Sources */,
 				8000EC9927395D6200B13BE9 /* ViewController.swift in Sources */,
 				80EF9AB82755509B00CC58C8 /* AuthViewController.swift in Sources */,
