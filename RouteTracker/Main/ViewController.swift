@@ -67,8 +67,8 @@ class ViewController: UIViewController {
         
         guard let routePath = loadFromDB()
         else {
-            let alert = UIAlertController(title: "Ошибка", message: "Нет сохраненного маршрута", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .cancel)
+            let alert = UIAlertController(title: "Error", message: "Not saved route", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .cancel)
             alert.addAction(action)
             present(alert, animated: true)
             return

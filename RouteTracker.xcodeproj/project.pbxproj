@@ -14,6 +14,8 @@
 		8000EC9E27395D6300B13BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9D27395D6300B13BE9 /* Assets.xcassets */; };
 		8000ECA127395D6300B13BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */; };
 		8037FE172743F79C00F2C583 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037FE162743F79C00F2C583 /* Point.swift */; };
+		803D475B275CE02C00B77E19 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803D475A275CE02C00B77E19 /* LaunchViewController.swift */; };
+		803D475D275CF21200B77E19 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803D475C275CF21200B77E19 /* Launch.storyboard */; };
 		80EF9AB62755507D00CC58C8 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EF9AB52755507D00CC58C8 /* Auth.storyboard */; };
 		80EF9AB82755509B00CC58C8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF9AB72755509B00CC58C8 /* AuthViewController.swift */; };
 		80EF9ABA27555A3E00CC58C8 /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EF9AB927555A3E00CC58C8 /* ResetPassViewController.swift */; };
@@ -34,6 +36,8 @@
 		8000ECA027395D6300B13BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8000ECA227395D6300B13BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8037FE162743F79C00F2C583 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		803D475A275CE02C00B77E19 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		803D475C275CF21200B77E19 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		80EF9AB52755507D00CC58C8 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		80EF9AB72755509B00CC58C8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		80EF9AB927555A3E00CC58C8 /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				80EF9AB42755506000CC58C8 /* Auth */,
 				80EF9AB32755463400CC58C8 /* Main */,
 				80EF9AB22755462700CC58C8 /* Resources */,
+				803D4759275CDF1A00B77E19 /* Launch */,
 				8074D815275246C10073B11E /* System */,
 			);
 			path = RouteTracker;
@@ -96,6 +101,15 @@
 				8037FE162743F79C00F2C583 /* Point.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		803D4759275CDF1A00B77E19 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				803D475A275CE02C00B77E19 /* LaunchViewController.swift */,
+				803D475C275CF21200B77E19 /* Launch.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		8074D815275246C10073B11E /* System */ = {
@@ -110,8 +124,8 @@
 		80EF9AB22755462700CC58C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8000EC9D27395D6300B13BE9 /* Assets.xcassets */,
 				8000EC9F27395D6300B13BE9 /* LaunchScreen.storyboard */,
+				8000EC9D27395D6300B13BE9 /* Assets.xcassets */,
 				8000ECA227395D6300B13BE9 /* Info.plist */,
 			);
 			path = Resources;
@@ -208,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EF9AB62755507D00CC58C8 /* Auth.storyboard in Resources */,
+				803D475D275CF21200B77E19 /* Launch.storyboard in Resources */,
 				8000ECA127395D6300B13BE9 /* LaunchScreen.storyboard in Resources */,
 				8000EC9E27395D6300B13BE9 /* Assets.xcassets in Resources */,
 				8000EC9C27395D6200B13BE9 /* Main.storyboard in Resources */,
@@ -287,6 +302,7 @@
 				80EF9ABA27555A3E00CC58C8 /* ResetPassViewController.swift in Sources */,
 				8000EC9527395D6200B13BE9 /* AppDelegate.swift in Sources */,
 				8000EC9727395D6200B13BE9 /* SceneDelegate.swift in Sources */,
+				803D475B275CE02C00B77E19 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

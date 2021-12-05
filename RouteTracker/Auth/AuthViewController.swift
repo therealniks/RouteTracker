@@ -33,9 +33,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if UserDefaults.standard.bool(forKey: "isLogin") {
-            performSegue(withIdentifier: "onLogin", sender: nil)
-        }
+
     }
     
 
