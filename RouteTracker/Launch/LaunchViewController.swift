@@ -9,14 +9,24 @@ import UIKit
 
 class LaunchViewController: UIViewController {
 
+    @IBOutlet weak var router: LaunchRouter!
     override func viewDidLoad() {
         super.viewDidLoad()
         if UserDefaults.standard.bool(forKey: "isLogin") {
-            performSegue(withIdentifier: "onMain", sender: nil)
+            router.toMain()
         } else {
-            performSegue(withIdentifier: "onLogin", sender: nil)
+            router.toAuth()
         }
         // Do any additional setup after loading the view.
+    }
+}
+
+class LaunchRouter: BaseRouter {
+    func toMain() {
+        perform(segue: "onMain")
+    }
+    func toAuth() {
+        perform(segue: "onLogin")
     }
 }
 

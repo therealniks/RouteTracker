@@ -88,12 +88,12 @@
 		8000EC9327395D6200B13BE9 /* RouteTracker */ = {
 			isa = PBXGroup;
 			children = (
+				803D475E275CF6DB00B77E19 /* BaseRouter.swift */,
 				80EF9AB42755506000CC58C8 /* Auth */,
 				80EF9AB32755463400CC58C8 /* Main */,
 				80EF9AB22755462700CC58C8 /* Resources */,
 				803D4759275CDF1A00B77E19 /* Launch */,
 				8074D815275246C10073B11E /* System */,
-				803D475E275CF6DB00B77E19 /* BaseRouter.swift */,
 			);
 			path = RouteTracker;
 			sourceTree = "<group>";

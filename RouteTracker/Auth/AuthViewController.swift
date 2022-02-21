@@ -13,7 +13,7 @@ class AuthViewController: UIViewController {
         static let login = "admin"
         static let password = "root"
     }
-    
+    @IBOutlet weak var router: LoginRouter!
     @IBOutlet weak var loginView: UITextField!
     @IBOutlet weak var passwordView: UITextField!
     
@@ -23,28 +23,26 @@ class AuthViewController: UIViewController {
               login == Constants.login && password == Constants.password else {return}
         
         print("LOGIN")
-        performSegue(withIdentifier: "onLogin", sender: nil)
+        router.toMain()
         UserDefaults.standard.set(true, forKey: "isLogin")
     }
     
     @IBAction func recovery(_ sender: UIButton) {
-        performSegue(withIdentifier: "onReset", sender: nil)
+        router.onReset()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+class LoginRouter: BaseRouter {
+    func toMain() {
+        perform(segue: "onLogin")
     }
-    */
-
+    func onReset() {
+        perform(segue: "onReset")
+    }
 }
